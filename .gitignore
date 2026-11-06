@@ -1,0 +1,19 @@
+# Eclipse files
+.settings/
+.metadata/
+.project
+.classpath
+
+# Build files
+build/
+target/
+bin/
+*.class
+
+# Logs
+*.log
+
+# Environment secrets
+.env
+.env.*
+!.env.example

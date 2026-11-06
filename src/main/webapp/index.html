@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeQuest - Learn Programming by Playing</title>
+    <style>
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; font-family: Arial, sans-serif; background: #0a1020; color: white; }
+
+        .navbar {
+            background: #101a33; padding: 18px 40px;
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 10px;
+        }
+        .navbar h2 { margin: 0; color: #29b6f6; }
+        .navbar a { color: white; text-decoration: none; margin-left: 20px; }
+        .navbar a.btn-small {
+            background: #29b6f6; color: #0a1020; font-weight: bold;
+            padding: 10px 18px; border-radius: 8px;
+        }
+
+        .hero { text-align: center; padding: 90px 20px 70px; }
+        .hero h1 { font-size: 48px; margin: 0 0 15px; color: #29b6f6; }
+        .hero p { font-size: 20px; color: #b8c4e0; max-width: 620px; margin: 0 auto 35px; line-height: 1.5; }
+        .btn {
+            display: inline-block; padding: 14px 28px; border-radius: 10px;
+            text-decoration: none; font-weight: bold; font-size: 16px; margin: 6px;
+        }
+        .btn-main { background: #29b6f6; color: #0a1020; }
+        .btn-outline { border: 2px solid #29b6f6; color: #29b6f6; }
+
+        .section { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .section h2 { text-align: center; color: #29b6f6; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .card { background: #1a2540; padding: 28px; border-radius: 14px; text-align: center; }
+        .card .icon { font-size: 38px; margin-bottom: 10px; }
+        .card h3 { margin: 8px 0; }
+        .card p { color: #b8c4e0; line-height: 1.5; margin: 0; }
+
+        .step-num {
+            display: inline-block; width: 42px; height: 42px; line-height: 42px;
+            border-radius: 50%; background: #29b6f6; color: #0a1020;
+            font-weight: bold; font-size: 20px; margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center; padding: 30px 20px; margin-top: 30px;
+            background: #101a33; color: #9fb0d0;
+        }
+        .footer a { color: #29b6f6; text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 34px; }
+            .navbar { padding: 16px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h2>CodeQuest</h2>
+    <div>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a class="btn-small" href="login.jsp">Login</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Learn Programming by Playing</h1>
+    <p>Solve coding missions, earn XP, level up, and climb the leaderboard.
+       Learn Java, Python, HTML, CSS, SQL and more.</p>
+    <a class="btn btn-main" href="register.jsp">Get Started</a>
+    <a class="btn btn-outline" href="login.jsp">Student Login</a>
+</div>
+
+<div class="section" id="features">
+    <h2>Features</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="icon">&#127919;</div>
+            <h3>Coding Missions</h3>
+            <p>Multiple-choice questions on many programming topics.</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#11088;</div>
+            <h3>Earn XP</h3>
+            <p>Every correct answer gives you XP points.</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#128640;</div>
+            <h3>Level Up</h3>
+            <p>Collect XP to reach higher levels as you learn.</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#127942;</div>
+            <h3>Leaderboard</h3>
+            <p>See how you rank against other students.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="how">
+    <h2>How it works</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="step-num">1</div>
+            <h3>Register</h3>
+            <p>Create your free student account.</p>
+        </div>
+        <div class="card">
+            <div class="step-num">2</div>
+            <h3>Pick a Mission</h3>
+            <p>Choose a question and select your answer.</p>
+        </div>
+        <div class="card">
+            <div class="step-num">3</div>
+            <h3>Earn Rewards</h3>
+            <p>Get XP, level up and climb the ranking.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; CodeQuest &nbsp;|&nbsp; <a href="adminLogin.jsp">Admin Login</a></p>
+</div>
+
+</body>
+</html>
